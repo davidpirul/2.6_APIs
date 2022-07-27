@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>APIs</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="texto">
+            <h2>CONVERSOR DE MONEDAS</h2>
+        </div>
+        <div class="conversor">
+            <h4>Pesos CLP</h4>
+            <input type="text" id="pesos" placeholder="Ingrese monto en CLP">
+            <h5>Moneda a convertir</h5>
+            <select id="tipoCambio" onchange="valorMoneda()">
+                <option>Monedas</option>
+                <option value="dolar">USD</option>
+                <option value="euro">EUR</option>
+            </select>
+            <br>
+            <button class="btn">CONVERTIR</button>
+            <p id="resultado"></p>
+        </div>
+        <br>
+        <h2>Valor de los ultimos 10 días</h2>
+        <div id="grafica">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
